@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+
 <head>
 
     <!--- basic page needs
@@ -18,6 +19,9 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/crousal.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <!-- script
     ================================================== -->
@@ -49,26 +53,26 @@
     <header class="s-header">
 
         <div class="row">
-            <div>
+            <div class="header-logo">
                 <a class="site-logo" href="index.html">
-                    <img src="images/logo.png" width= 80px height= 80px alt="Homepage">
+                    <img src="images/logo.png" width=80px height=80px alt="Homepage">
                 </a>
             </div>
-    
+
             <nav class="header-nav-wrap">
                 <ul class="header-main-nav">
                     <li class="current"><a class="smoothscroll" href="#home" title="intro">Intro</a></li>
                     <li><a class="smoothscroll" href="#about" title="about">About</a></li>
                     <li><a class="smoothscroll" href="#features" title="features">Features</a></li>
                     <li><a class="smoothscroll" href="#upcoming" title="upcoming">Upcoming</a></li>
-                    <li><a class="smoothscroll" href="#download" title="download">Download</a></li>	
+                    <li><a class="smoothscroll" href="#download" title="download">Download</a></li>
                 </ul>
-    
+
                 <div class="header-cta">
                     <a href="#download" class="btn btn--primary header-cta__btn smoothscroll">Get The App</a>
                 </div>
             </nav> <!-- end header-nav-wrap -->
-    
+
             <a class="header-menu-toggle" href="#"><span>Menu</span></a>
         </div>
 
@@ -77,190 +81,190 @@
 
     <!-- home
     ================================================== -->
-    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg"
+        data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
         <div class="shadow-overlay"></div>
-
-        <div class="home-content">
-
-            <div class="row home-content__main">
-
-                <div class="home-content__left">
-                    <h1>
-                    MH RUMMY<br> <center>by</center>
-                    MH-Games.
-                    </h1>
-    
-                    <h2 style="color: rgb(207, 206, 206);">
-                    India's most trusted, Genuine, Legal Rummy Destination
-                    </h2>
-    
-                    <div class="home-content__btn-wrap">
-                        <a href="#download" class="btn btn--primary home-content__btn smoothscroll">
-                            Download the App
-                        </a>
-                    </div>
-                </div> <!-- end home-content__left-->
-
-                <div class="home-content__right">
-                    <img src="images/hero-app-screens-800.png" srcset="images/hero-app-screens-800.png 1x, images/hero-app-screens-1600.png 2x">
-                </div> <!-- end home-content__right -->
-
-            </div> <!-- end home-content__main -->
-
-            <ul class="home-content__social">
-                <li><a href="#0">Facebook</a></li>
-                <li><a href="#0">twitter</a></li>
-                <li><a href="#0">Instagram</a></li>
+        <section class="slider">
+            <ul class="carousel" id="carousel">
+                <li class="bg-1">
+                    <img src="/images/rummy2.jpg" alt="">
+                </li>
+                <li class="bg-2">
+                    <img src="/images/rummy2.jpg" alt="">
+                </li>
+                <li class="bg-3">
+                    <img src="/images/rummy2.jpg" alt="">
+                </li>
             </ul>
-
-        </div> <!-- end home-content -->
+            <ul class="sliderpagnation">
+                <li><a href="#"><i class="fa fa-circle"></i></a></li>
+                <li><a href="#"><i class="fa fa-circle"></i></a></li>
+                <li><a href="#"><i class="fa fa-circle"></i></a></li>
+            </ul>
+        </section>
 
         <a href="#about" class="home-scroll smoothscroll">
             <span class="home-scroll__text">Scroll</span>
             <span class="home-scroll__icon"></span>
-        </a> 
+        </a>
 
     </section> <!-- end s-home -->
 
 
+    <div class="home-content" id="about">
+
+        <div class="row home-content__main">
+
+            <div class="home-content__left">
+                <h1>
+                    MH RUMMY<br>
+                    <center>by</center>
+                    MH-Games.
+                </h1>
+
+                <h2 style="color: rgb(207, 206, 206);">
+                    India's most trusted, Genuine, Legal Rummy Destination
+                </h2>
+
+                <div class="home-content__btn-wrap">
+                    <a href="#download" class="btn btn--primary home-content__btn smoothscroll">
+                        Download the App
+                    </a>
+                </div>
+            </div> <!-- end home-content__left-->
+
+            <div class="home-content__right">
+                <img src="images/hero-app-screens-800.png"
+                    srcset="images/hero-app-screens-800.png 1x, images/hero-app-screens-1600.png 2x">
+            </div> <!-- end home-content__right -->
+
+        </div> <!-- end home-content__main -->
+
+        <ul class="home-content__social">
+            <li><a href="#0">Facebook</a></li>
+            <li><a href="#0">twitter</a></li>
+            <li><a href="#0">Instagram</a></li>
+        </ul>
+
+    </div> <!-- end home-content -->
     <!-- about
     ================================================== -->
-    <section id="about" class="s-about target-section">
+    <section class="s-about target-section">
 
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
             <div class="col-full">
                 <h1 class="display-1">
                     India's most trusted, Genuine, Legal Rummy Destination</h1>
                 <p class="lead">
-                    This game is a Digital online gaming platform <br>with financial fulfillment.<br><br> <strong>Please play on your risk.</strong>
+                    This game is a Digital online gaming platform <br>with financial fulfillment.<br><br> <strong>Please
+                        play on your risk.</strong>
                 </p>
             </div>
         </div> <!-- end section-header -->
 
         <div class="row wide about-desc" data-aos="fade-up">
-            <center> <h2 style="color: white">Introducing</h2></center>
+            <center>
+                <h2 style="color: white">Introducing</h2>
+            </center>
             <br>
-            <div class="col-full slick-slider about-desc__slider">
-
+            <div class="col-full d-flex text-center justify_space_ar">
                 <div class="about-desc__slide">
                     <h3 class="item-title">Paplu Rummy</h3>
-
-                    <!-- <p>
-                    Et nihil atque ex. Reiciendis et rerum ut voluptate. Omnis molestiae nemo est. 
-                    Ut quis enim rerum quia assumenda repudiandae non cumque qui. Amet repellat 
-                    omnis ea aut cumque eos.
-                    </p> -->
-                </div>  <!-- end about-desc__slide -->
+                </div> <!-- end about-desc__slide -->
 
                 <div class="about-desc__slide">
                     <h3 class="item-title">Points Rummy</h3>
-                </div>  <!-- end about-desc__slide -->
+                </div> <!-- end about-desc__slide -->
 
                 <div class="about-desc__slide">
                     <h3 class="item-title">Deal Rummy</h3>
-                </div>  <!-- end about-desc__slide -->
-
+                </div> <!-- end about-desc__slide -->
+    
                 <div class="about-desc__slide">
                     <h3 class="item-title">Pool Rummy</h3>
-                </div>  <!-- end about-desc__slide -->
-
+                </div> <!-- end about-desc__slide -->
             </div> <!-- end about-desc__slider -->
+
             
         </div> <!-- end about-desc -->
 
     </section> <!-- end s-about -->
 
-
-    <!-- about-how
-    ================================================== -->
-    <section id="about-how" class="s-about-how">
-
-        
-
-        <br>
-        <div class="row process-wrap">
-
-            <h1 class="display-2 text-center" data-aos="fade-up" style="font-size: 70px;;">So Play More & Win More</h1>
-
-            
-        </div> <!-- end about-how -->
-
-    </section> <!-- end s-about-how -->
-
-
+    
     <!-- features
-    ================================================== -->
+        ================================================== -->
     <section id="features" class="s-features target-section">
+        <h1 class="display-2 text-center" data-aos="fade-up" style="font-size: 70px;;">So Play More & Win More</h1>
 
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
             <div class="col-full">
                 <h1 class="display-1">
                     Instant Cash, Unlimited Withdrawals<br> in 10 mins
                 </h1>
-                
+
             </div>
         </div> <!-- end section-header -->
 
-        <div class="row features block-1-3 block-m-1-2">
+        <div class="row features block-1-3 block-m-1-2 text-center">
 
             <div class="col-block item-feature" data-aos="fade-up">
                 <div class="item-feature__icon">
-                    <i class="icon-upload"></i>
+                    <img src="https://img.icons8.com/color/48/000000/phone-pe.png"/>
                 </div>
                 <div class="item-feature__text">
                     <h3 class="item-title">PhonePe</h3>
-                    
+
                 </div>
             </div>
 
             <div class="col-block item-feature" data-aos="fade-up">
                 <div class="item-feature__icon">
-                    <i class="icon-video-camera"></i>
+                    <img src="https://img.icons8.com/color/48/000000/google-pay-india.png"/>
                 </div>
                 <div class="item-feature__text">
                     <h3 class="item-title">Google Pay</h3>
-                    
+
                 </div>
             </div>
 
             <div class="col-block item-feature" data-aos="fade-up">
                 <div class="item-feature__icon">
-                    <i class="icon-shield"></i>
-                </div>  
+                    <img src="https://img.icons8.com/color/48/000000/paytm.png"/>
+                </div>
                 <div class="item-feature__text">
                     <h3 class="item-title">Paytm</h3>
-                    
+
                 </div>
             </div>
 
             <div class="col-block item-feature" data-aos="fade-up">
                 <div class="item-feature__icon">
-                    <i class="icon-lego-block"></i>
+                    <img src="https://img.icons8.com/ios/50/000000/bhim-upi.png"/>
                 </div>
                 <div class="item-feature__text">
                     <h3 class="item-title">UPI</h3>
-                    
+
                 </div>
             </div>
 
             <div class="col-block item-feature" data-aos="fade-up">
                 <div class="item-feature__icon">
-                    <i class="icon-chat"></i>
+                    <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-bank-building-and-construction-flatart-icons-outline-flatarticons.png"/>
                 </div>
                 <div class="item-feature__text">
                     <h3 class="item-title">Bank Transfer</h3>
-                    
+
                 </div>
             </div>
-    
+
             <div class="col-block item-feature" data-aos="fade-up">
                 <div class="item-feature__icon">
-                    <i class="icon-wallet"></i>
+                    <img src="https://img.icons8.com/color/48/000000/amazon.png"/>
                 </div>
                 <div class="item-feature__text">
                     <h3 class="item-title">Amazon Pay</h3>
-                    
+
                 </div>
             </div>
 
@@ -280,9 +284,10 @@
 
                     <div class="testimonials__slide">
                         <img src="images/avatars/user-03.jpg" alt="Author image" class="testimonials__avatar">
-                        
-                        <p>Qui ipsam temporibus quisquam velMaiores eos cumque distinctio nam accusantium ipsum. 
-                        Laudantium quia consequatur molestias delectus culpa facere hic dolores aperiam. Accusantium praesentium corpori.</p>
+
+                        <p>Qui ipsam temporibus quisquam velMaiores eos cumque distinctio nam accusantium ipsum.
+                            Laudantium quia consequatur molestias delectus culpa facere hic dolores aperiam. Accusantium
+                            praesentium corpori.</p>
 
                         <div class="testimonials__author">
                             <span class="testimonials__name">Naruto Uzumaki</span>
@@ -292,10 +297,12 @@
 
                     <div class="testimonials__slide">
                         <img src="images/avatars/user-05.jpg" alt="Author image" class="testimonials__avatar">
-                        
-                        <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
-                        Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel.</p>
-                        
+
+                        <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas
+                            animi adipisci.
+                            Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam
+                            temporibus quisquam vel.</p>
+
                         <div class="testimonials__author">
                             <span class="testimonials__name">Sasuke Uchiha</span>
                             <a href="#0" class="testimonials__link">@sasukeuchiha</a>
@@ -304,16 +311,18 @@
 
                     <div class="testimonials__slide">
                         <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
-                        
-                        <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
-                        Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.</p>
+
+                        <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia
+                            nesciunt. Ducimus aut sed ipsam.
+                            Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius
+                            distinctio.</p>
 
                         <div class="testimonials__author">
                             <span class="testimonials__name">Shikamaru Nara</span>
                             <a href="#0" class="testimonials__link">@shikamarunara</a>
                         </div>
                     </div> <!-- end testimonials__slide -->
-                    
+
                 </div> <!-- end testimonials__slider -->
 
             </div> <!-- end testimonials -->
@@ -330,7 +339,7 @@
         <div class="row section-header align-center" data-aos="fade-up">
             <div class="col-full">
                 <h1 class="display-1">
-                   Upcoming Games.
+                    Upcoming Games.
                 </h1>
                 <p class="lead">
                     Following games will be coming soon.
@@ -338,51 +347,51 @@
             </div>
         </div> <!-- end section-header -->
 
-        <div class="row features block-1-2 block-m-1-2">
+        <div class="row features block-1-2 block-m-1-2 text-center">
 
             <div class="col-block item-feature" data-aos="fade-up">
                 <div class="item-feature__icon">
-                    <i class="icon-upload"></i>
+                    <img class="w-70" src="/images/ludo.jpg" alt="">
                 </div>
                 <div class="item-feature__text">
                     <h3 class="item-title">Ludo</h3>
-                    
+
                 </div>
             </div>
 
             <div class="col-block item-feature" data-aos="fade-up">
                 <div class="item-feature__icon">
-                    <i class="icon-video-camera"></i>
+                    <img class="w-70" src="/images/carrom.jpg" alt="">
                 </div>
                 <div class="item-feature__text">
                     <h3 class="item-title">Carrom</h3>
-                    
+
                 </div>
             </div>
 
             <div class="col-block item-feature" data-aos="fade-up">
                 <div class="item-feature__icon">
-                    <i class="icon-shield"></i>
-                </div>  
+                    <img class="w-70" src="/images/chess.jpg" alt="">
+                </div>
                 <div class="item-feature__text">
                     <h3 class="item-title">Chess</h3>
-                    
+
                 </div>
             </div>
 
             <div class="col-block item-feature" data-aos="fade-up">
                 <div class="item-feature__icon">
-                    <i class="icon-lego-block"></i>
+                    <img class="w-70" src="/images/archery.jpg" alt="">
                 </div>
                 <div class="item-feature__text">
                     <h3 class="item-title">Archery</h3>
-                    
+
                 </div>
             </div>
 
         </div>
 
-        
+
 
     </section> <!-- end s-pricing -->
 
@@ -397,7 +406,7 @@
                     Join Our Community of Passionate Rummy players.
                 </h1>
                 <p class="lead">
-                    
+
                 </p>
             </div>
         </div> <!-- end section-header -->
@@ -407,13 +416,12 @@
                 <ul class="download-badges" data-aos="fade-up">
                     <li><a href="#0" title="" class="badge-googleplay">Play Store</a></li>
                 </ul>
-            </div> 
+            </div>
         </div>
 
         <div class="row download-bottom-image" data-aos="fade-up">
-            <img src="images/app-screen.jpg" 
-                
-                alt="App Screenshots" style="border-top-right-radius: 50px;border-top-left-radius: 50px;"> 
+            <img src="images/app-screen.jpg" alt="App Screenshots"
+                style="border-top-right-radius: 50px;border-top-left-radius: 50px;">
         </div>
 
     </section> <!-- end s-download -->
@@ -429,7 +437,7 @@
                     Let's Stay In Touch.
                 </h1>
                 <p class="lead">
-                Subscribe for updates, special offers, and other amazing stuff.
+                    Subscribe for updates, special offers, and other amazing stuff.
                 </p>
             </div>
         </div> <!-- end section-header -->
@@ -440,12 +448,13 @@
                 <div class="subscribe-form">
                     <form id="mc-form" class="group" novalidate="true">
 
-                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
-            
+                        <input type="email" value="" name="EMAIL" class="email" id="mc-email"
+                            placeholder="Email Address" required="">
+
                         <input type="submit" name="subscribe" value="Sign Up">
-            
+
                         <label for="mc-email" class="subscribe-message"></label>
-            
+
                     </form>
                 </div>
             </div>
@@ -459,7 +468,7 @@
                 <h4>About MH-Games.</h4>
 
                 <p>
-                Awesome game development company.
+                    Awesome game development company.
                 </p>
 
                 <ul class="footer__social">
@@ -472,22 +481,22 @@
             <div class="col-five md-seven tab-full right end">
                 <div class="row">
 
-                    
+
 
                     <div class="footer__contact col-seven mob-full">
                         <h4>Contact Us.</h4>
 
-                        <p >
-                        Phone: (+91)<a href="tel:9422884968"> 9422884968 </a>
+                        <p>
+                            Phone: (+91)<a href="tel:9422884968"> 9422884968 </a>
                         </p>
-                        
+
                     </div>
 
                 </div>
             </div>
 
             <div class="col-full ss-copyright">
-                <span>&copy; All rights reserved.</span> 
+                <span>&copy; All rights reserved.</span>
                 <span>Design by <a href="https://www.searchin.co.in/">Search-In</a></span>
             </div>
 
@@ -505,5 +514,38 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.caroufredsel/6.2.1/jquery.carouFredSel.packed.js"></script>
+    <script>
+        //requires carouFredsel.js
+        //pen by Beatrize
+
+        jQuery(document).ready(function () {
+            "use strict";
+            $(".carousel").carouFredSel({
+                responsive: true,
+                width: "100%",
+                circular: true,
+                scroll: {
+                    item: 1,
+                    duration: 500,
+                    pauseOnHover: true
+                },
+                auto: true,
+                items: {
+                    visible: {
+                        min: 1,
+                        max: 1
+                    },
+                    height: "variable"
+                },
+                pagination: {
+                    container: ".sliderpagnation",
+                    anchorBuilder: false
+                }
+            });
+        });
+
+    </script>
 
 </body>

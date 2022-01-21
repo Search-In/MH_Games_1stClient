@@ -132,10 +132,20 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   margin-top: 6rem;
   margin-bottom: 1.6rem;
 }
-
+.w-70{
+  width: 70px;
+}
+.home-content__left {
+  text-align: center;
+}
 @media only screen and (max-width:600px) {
   h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     margin-top: 5.6rem;
+  }
+}
+@media only screen and (max-width:500px) {
+  .d-flex{
+    display: block !important;
   }
 }
 
@@ -204,6 +214,12 @@ p.lead {
   color: #898989;
 }
 
+.d-flex{
+  display: flex;
+}
+.justify_space_ar{
+  justify-content: space-around;
+}
 @media only screen and (max-width:1200px) {
   p.lead {
     font-size: 2.6rem;
@@ -1730,8 +1746,8 @@ input::-moz-focus-inner {
 }
 
 .header-logo img {
-  width: 130px;
-  height: 36px;
+  width: 85px;
+  height: 85px;
 }
 
 
@@ -2004,7 +2020,10 @@ input::-moz-focus-inner {
   .header-menu-toggle {
     display: block;
   }
-
+  .header-logo img {
+    width: 70px;
+    height: 65px;
+  }
 }
 
 @media only screen and (max-width:400px) {
@@ -2042,7 +2061,6 @@ input::-moz-focus-inner {
 .s-home {
   display: table;
   width: 100%;
-  min-height: 788px;
   background-color: transparent;
   position: relative;
 }
@@ -2079,11 +2097,10 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 .home-content {
   z-index: 4;
-  display: table-cell;
   vertical-align: bottom;
-  padding-top: 24.8rem;
   width: 100%;
   position: relative;
+  padding-top: 2rem;
 }
 
 .home-content h1 {
@@ -2368,9 +2385,6 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width:1500px) {
-  .home-content {
-    padding-top: 23.2rem;
-  }
 
   .home-content h1 {
     font-size: 6.2rem;
@@ -2443,7 +2457,7 @@ html.no-csstransitions .home-content__main {
   .s-home {
     display: block;
     overflow: hidden;
-    min-height: 740px;
+    margin-top: 78px;
   }
 
   .home-content {
@@ -2496,9 +2510,6 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width:900px) {
-  .home-content {
-    padding-top: 16.8rem;
-  }
 
   .home-content h1 {
     font-size: 6.2rem;
@@ -2600,9 +2611,6 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width:400px) {
-  .home-content {
-    padding-top: 15.2rem;
-  }
 
   .home-content h1 {
     font-size: 4.2rem;
@@ -2639,8 +2647,8 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-about {
-  padding-top: 23.2rem;
-  padding-bottom: calc((62.4rem/2) + 6.4rem);
+  padding-top: 9.2rem;
+  padding-bottom: 5rem;
   background-color: #5b4f96;
   color: rgba(255, 255, 255, 0.8);
   overflow: hidden;
@@ -2690,23 +2698,17 @@ html.no-csstransitions .home-content__main {
  * responsive:
  * about
  * ------------------------------------------------------------------- */
-@media only screen and (max-width:1400px) {
-  .s-about {
-    padding-bottom: calc((62.4rem/2) + 9.6rem);
-  }
-
-}
 
 @media only screen and (max-width:1200px) {
   .s-about {
-    padding-top: 18.4rem;
+    padding-top: 30rem;
   }
 
 }
 
 @media only screen and (max-width:1000px) {
   .s-about {
-    padding-top: 17.2rem;
+    padding-top: 30rem;
   }
 
   .about-desc__slide {
@@ -2717,7 +2719,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width:800px) {
   .s-about {
-    padding-top: 16rem;
+    padding-top: 26rem;
   }
 
 }
@@ -2736,8 +2738,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width:600px) {
   .s-about {
-    padding-top: 14.8rem;
-    padding-bottom: calc((60rem/2) + 9.6rem);
+    padding-top: 20rem;
   }
 
   .about-desc {
@@ -2750,17 +2751,10 @@ html.no-csstransitions .home-content__main {
 
 }
 
-@media only screen and (max-width:500px) {
-  .s-about {
-    padding-bottom: calc((52rem/2) + 9.6rem);
-  }
-
-}
 
 @media only screen and (max-width:400px) {
   .s-about {
-    padding-top: 14rem;
-    padding-bottom: calc((48rem/2) + 9.6rem);
+    padding-top: 20rem;
   }
 
 }
@@ -3159,7 +3153,7 @@ html.no-csstransitions .home-content__main {
 .s-features {
   padding-top: 19.2rem;
   padding-bottom: 20rem;
-  background-color: #eaeaea;
+  background-color: #ffffffe0;;
   overflow: hidden;
   position: relative;
 }
@@ -3409,7 +3403,7 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-pricing {
-  padding-top: 19.2rem;
+  padding-top: 1.2rem;
   padding-bottom: 16rem;
   background-color: #ffffff;
   position: relative;
