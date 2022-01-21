@@ -59,7 +59,20 @@
     transform: translateX(0);
   }
 }
+@media screen and (max-width: 1200px) {
+  .carousel-wrapper{
+    margin-top: 85px !important;
+  }
+}
+@media screen and (max-width: 800px){
+  .hand_img{
+    display: none;
+  }
+}
 @media screen and (max-width: 576px) {
+  .carousel-wrapper{
+    margin-top: 0px !important;
+  }
   .carousel-wrapper {
     width: 312px;
     height: 210px;
