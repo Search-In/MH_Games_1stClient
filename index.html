@@ -55,7 +55,8 @@
         <div class="row">
             <div class="header-logo">
                 <a class="site-logo" href="index.html">
-                    <img src="images/logo.png" width=80px height=80px alt="Homepage">
+                    <img src="images/logo.png" alt="Homepage">
+                    <img src="images/MH-Games.png" style="width: auto !important;" alt="">
                 </a>
             </div>
 
@@ -81,29 +82,54 @@
 
     <!-- home
     ================================================== -->
-    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg"
-        data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+    <section id="home" class="s-home target-section" style="background-image: url(/images/23143.jpg); background-size: cover;">
 
         <div class="shadow-overlay"></div>
-        <section class="slider">
-            <ul class="carousel" id="carousel">
-                <li class="bg-1">
-                    <img src="https://github.com/Search-In/MH_Games_1stClient/blob/Ani/images/rummy2.jpg?raw=true" alt="">
-                </li>
-                <li class="bg-2">
-                    <img src="https://github.com/Search-In/MH_Games_1stClient/blob/Ani/images/rummy2.jpg?raw=true" alt="">
-                </li>
-                <li class="bg-3">
-                    <img src="https://github.com/Search-In/MH_Games_1stClient/blob/Ani/images/rummy2.jpg?raw=true" alt="">
-                </li>
-            </ul>
-            <ul class="sliderpagnation">
-                <li><a href="#"><i class="fa fa-circle"></i></a></li>
-                <li><a href="#"><i class="fa fa-circle"></i></a></li>
-                <li><a href="#"><i class="fa fa-circle"></i></a></li>
-            </ul>
-        </section>
 
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <div class="home-content__left">
+                    <h1>
+                        MH RUMMY<br>
+                        <center>by</center>
+                        MH-Games.
+                    </h1>
+
+                    <h2 style="color: rgb(207, 206, 206);">
+                        India's most trusted, Genuine, Legal Rummy Destination
+                    </h2>
+
+                    <div class="home-content__btn-wrap">
+                        <a href="#download" class="btn btn--primary home-content__btn smoothscroll">
+                            Download the App
+                        </a>
+                    </div>
+                </div> <!-- end home-content__left-->
+
+                <div class="home-content__right d-flex" style="justify-content: center;">
+                    <img src="/images/hands1.png" alt="" style="width: 100%;">
+                    <div class="carousel-wrapper">
+                        <div class="carousel-container">
+                            <div class="carousel">
+                                <div class="image-one"></div>
+                                <div class="image-two"></div>
+                                <div class="image-three"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end home-content__right -->
+
+            </div> <!-- end home-content__main -->
+
+            <ul class="home-content__social">
+                <li><a href="#0">Facebook</a></li>
+                <li><a href="#0">twitter</a></li>
+                <li><a href="#0">Instagram</a></li>
+            </ul>
+
+        </div> <!-- end home-content -->
         <a href="#about" class="home-scroll smoothscroll">
             <span class="home-scroll__text">Scroll</span>
             <span class="home-scroll__icon"></span>
@@ -112,50 +138,14 @@
     </section> <!-- end s-home -->
 
 
-    <div class="home-content" id="about">
-
-        <div class="row home-content__main">
-
-            <div class="home-content__left">
-                <h1>
-                    MH RUMMY<br>
-                    <center>by</center>
-                    MH-Games.
-                </h1>
-
-                <h2 style="color: rgb(207, 206, 206);">
-                    India's most trusted, Genuine, Legal Rummy Destination
-                </h2>
-
-                <div class="home-content__btn-wrap">
-                    <a href="#download" class="btn btn--primary home-content__btn smoothscroll">
-                        Download the App
-                    </a>
-                </div>
-            </div> <!-- end home-content__left-->
-
-            <div class="home-content__right">
-                <img src="images/hero-app-screens-800.png"
-                    srcset="images/hero-app-screens-800.png 1x, images/hero-app-screens-1600.png 2x">
-            </div> <!-- end home-content__right -->
-
-        </div> <!-- end home-content__main -->
-
-        <ul class="home-content__social">
-            <li><a href="#0">Facebook</a></li>
-            <li><a href="#0">twitter</a></li>
-            <li><a href="#0">Instagram</a></li>
-        </ul>
-
-    </div> <!-- end home-content -->
     <!-- about
     ================================================== -->
-    <section class="s-about target-section">
-
+    <section class="s-about target-section" id="about">
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <img src="/images/gold.png" alt="" class="gold_img">
             <div class="col-full">
-                <h1 class="display-1">
-                    India's most trusted, Genuine, Legal Rummy Destination</h1>
+                <h2 class="display-1">
+                    India's most trusted, Genuine, Legal Rummy Destination</h2>
                 <p class="lead">
                     This game is a Digital online gaming platform <br>with financial fulfillment.<br><br> <strong>Please
                         play on your risk.</strong>
@@ -180,22 +170,22 @@
                 <div class="about-desc__slide">
                     <h3 class="item-title">Deal Rummy</h3>
                 </div> <!-- end about-desc__slide -->
-    
+
                 <div class="about-desc__slide">
                     <h3 class="item-title">Pool Rummy</h3>
                 </div> <!-- end about-desc__slide -->
             </div> <!-- end about-desc__slider -->
 
-            
+
         </div> <!-- end about-desc -->
 
     </section> <!-- end s-about -->
 
-    
+
     <!-- features
         ================================================== -->
-    <section id="features" class="s-features target-section">
-        <h1 class="display-2 text-center" data-aos="fade-up" style="font-size: 70px;;">So Play More & Win More</h1>
+    <section id="features" class="s-features target-section" >
+        <h1 class="display-2 text-center" data-aos="fade-up" style="font-size: 40px;;">So Play More & Win More</h1>
 
         <div class="row section-header has-bottom-sep" data-aos="fade-up">
             <div class="col-full">
@@ -210,7 +200,7 @@
 
             <div class="col-block item-feature" data-aos="fade-up">
                 <div class="item-feature__icon">
-                    <img src="https://img.icons8.com/color/48/000000/phone-pe.png"/>
+                    <img src="https://img.icons8.com/color/48/000000/phone-pe.png" />
                 </div>
                 <div class="item-feature__text">
                     <h3 class="item-title">PhonePe</h3>
@@ -220,7 +210,7 @@
 
             <div class="col-block item-feature" data-aos="fade-up">
                 <div class="item-feature__icon">
-                    <img src="https://img.icons8.com/color/48/000000/google-pay-india.png"/>
+                    <img src="https://img.icons8.com/color/48/000000/google-pay-india.png" />
                 </div>
                 <div class="item-feature__text">
                     <h3 class="item-title">Google Pay</h3>
@@ -230,7 +220,7 @@
 
             <div class="col-block item-feature" data-aos="fade-up">
                 <div class="item-feature__icon">
-                    <img src="https://img.icons8.com/color/48/000000/paytm.png"/>
+                    <img src="https://img.icons8.com/color/48/000000/paytm.png" />
                 </div>
                 <div class="item-feature__text">
                     <h3 class="item-title">Paytm</h3>
@@ -240,7 +230,7 @@
 
             <div class="col-block item-feature" data-aos="fade-up">
                 <div class="item-feature__icon">
-                    <img src="https://img.icons8.com/ios/50/000000/bhim-upi.png"/>
+                    <img src="https://img.icons8.com/ios/50/000000/bhim-upi.png" />
                 </div>
                 <div class="item-feature__text">
                     <h3 class="item-title">UPI</h3>
@@ -250,7 +240,8 @@
 
             <div class="col-block item-feature" data-aos="fade-up">
                 <div class="item-feature__icon">
-                    <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-bank-building-and-construction-flatart-icons-outline-flatarticons.png"/>
+                    <img
+                        src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-bank-building-and-construction-flatart-icons-outline-flatarticons.png" />
                 </div>
                 <div class="item-feature__text">
                     <h3 class="item-title">Bank Transfer</h3>
@@ -260,7 +251,7 @@
 
             <div class="col-block item-feature" data-aos="fade-up">
                 <div class="item-feature__icon">
-                    <img src="https://img.icons8.com/color/48/000000/amazon.png"/>
+                    <img src="https://img.icons8.com/color/48/000000/amazon.png" />
                 </div>
                 <div class="item-feature__text">
                     <h3 class="item-title">Amazon Pay</h3>
@@ -351,7 +342,8 @@
 
             <div class="col-block item-feature" data-aos="fade-up">
                 <div class="item-feature__icon">
-                    <img class="w-70" src="https://raw.githubusercontent.com/Search-In/MH_Games_1stClient/Ani/images/ludo.jpg" alt="">
+                    <img class="w-70"
+                        src="https://raw.githubusercontent.com/Search-In/MH_Games_1stClient/Ani/images/ludo.jpg" alt="">
                 </div>
                 <div class="item-feature__text">
                     <h3 class="item-title">Ludo</h3>
@@ -361,7 +353,9 @@
 
             <div class="col-block item-feature" data-aos="fade-up">
                 <div class="item-feature__icon">
-                    <img class="w-70" src="https://raw.githubusercontent.com/Search-In/MH_Games_1stClient/Ani/images/carrom.jpg" alt="">
+                    <img class="w-70"
+                        src="https://raw.githubusercontent.com/Search-In/MH_Games_1stClient/Ani/images/carrom.jpg"
+                        alt="">
                 </div>
                 <div class="item-feature__text">
                     <h3 class="item-title">Carrom</h3>
@@ -371,7 +365,8 @@
 
             <div class="col-block item-feature" data-aos="fade-up">
                 <div class="item-feature__icon">
-                    <img class="w-70" src="https://github.com/Search-In/MH_Games_1stClient/blob/Ani/images/chess.jpg?raw=true" alt="">
+                    <img class="w-70"
+                        src="https://github.com/Search-In/MH_Games_1stClient/blob/Ani/images/chess.jpg?raw=true" alt="">
                 </div>
                 <div class="item-feature__text">
                     <h3 class="item-title">Chess</h3>
@@ -381,7 +376,9 @@
 
             <div class="col-block item-feature" data-aos="fade-up">
                 <div class="item-feature__icon">
-                    <img class="w-70" src="https://github.com/Search-In/MH_Games_1stClient/blob/Ani/images/archery.jpg?raw=true" alt="">
+                    <img class="w-70"
+                        src="https://github.com/Search-In/MH_Games_1stClient/blob/Ani/images/archery.jpg?raw=true"
+                        alt="">
                 </div>
                 <div class="item-feature__text">
                     <h3 class="item-title">Archery</h3>
