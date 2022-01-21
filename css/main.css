@@ -2042,7 +2042,6 @@ input::-moz-focus-inner {
 .s-home {
   display: table;
   width: 100%;
-  min-height: 788px;
   background-color: transparent;
   position: relative;
 }
@@ -2443,7 +2442,6 @@ html.no-csstransitions .home-content__main {
   .s-home {
     display: block;
     overflow: hidden;
-    min-height: 740px;
   }
 
   .home-content {

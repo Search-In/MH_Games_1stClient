@@ -5,7 +5,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Kairos</title>
+    <title>MH Games Rummy</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
-
+    <link rel="stylesheet" href="css/crousal.css">
     <!-- script
     ================================================== -->
     <script src="js/modernizr.js"></script>
@@ -81,41 +81,33 @@
 
         <div class="shadow-overlay"></div>
 
-        <div class="home-content">
-
-            <div class="row home-content__main">
-
-                <div class="home-content__left">
-                    <h1>
-                    An Amazing App <br>
-                    That Does It All.
-                    </h1>
-    
-                    <h3>
-                    Voluptatem ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explica. Nemo enim ipsam voluptatem quia. 
-                    Ut quis enim.
-                    </h3>
-    
-                    <div class="home-content__btn-wrap">
-                        <a href="#download" class="btn btn--primary home-content__btn smoothscroll">
-                            Get The App
-                        </a>
-                    </div>
-                </div> <!-- end home-content__left-->
-
-                <div class="home-content__right">
-                    <img src="images/hero-app-screens-800.png" srcset="images/hero-app-screens-800.png 1x, images/hero-app-screens-1600.png 2x">
-                </div> <!-- end home-content__right -->
-
-            </div> <!-- end home-content__main -->
-
-            <ul class="home-content__social">
-                <li><a href="#0">Facebook</a></li>
-                <li><a href="#0">twitter</a></li>
-                <li><a href="#0">Instagram</a></li>
+        <section class="slider">
+            <ul class="carousel" id="carousel">
+              <li class="bg-1">
+                <h1>Slide 1</h1>
+                <p>For desktops: hovering pauses slide.</p>
+                <p>For mobile: ?! Fork me!</p>
+              </li>
+              <li class="bg-2">
+                 <h1>Slide 2</h1>
+                 <p>For desktops: hovering pauses slide.</p>
+                 <p>For mobile: ?! Fork me!
+              </li>
+              <li class="bg-3">
+                 <h1>Slide 3</h1>
+                 <p>For desktops: hovering pauses slide.</p>
+                <p>For mobile: ?! Fork me!</p>
+              </li>
             </ul>
-
-        </div> <!-- end home-content -->
+            <ul class="sliderpagnation">
+                <li><a href="#"><i class="fa fa-circle"></i></a></li>
+                <li><a href="#"><i class="fa fa-circle"></i></a></li>
+                <li><a href="#"><i class="fa fa-circle"></i></a></li>
+            </ul>
+    </section>
+    
+    
+    
 
         <a href="#about" class="home-scroll smoothscroll">
             <span class="home-scroll__text">Scroll</span>
@@ -633,5 +625,37 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.caroufredsel/6.2.1/jquery.carouFredSel.packed.js"></script>
+    <script>
+        //requires carouFredsel.js
+//pen by Beatrize
+
+jQuery(document).ready(function() {
+  "use strict";
+  $(".carousel").carouFredSel({
+    responsive: true,
+    width: "100%",
+    circular: true,
+    scroll: {
+      item: 1,
+      duration: 500,
+      pauseOnHover: true
+    },
+    auto: true,
+    items: {
+      visible: {
+        min: 1,
+        max: 1
+      },
+      height: "variable"
+    },
+    pagination: {
+      container: ".sliderpagnation",
+      anchorBuilder: false
+    }
+  });
+});
+
+    </script>
 
 </body>
